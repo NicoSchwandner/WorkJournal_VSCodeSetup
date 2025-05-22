@@ -1,71 +1,154 @@
-# DevJournal
+# 🚀 Work-Journal Quickstart for VSCode
 
-You can use the scripts as described below to generate a daily template. There will be appended different reflection templates depending on which day the script runs for.
+> A zero-friction Markdown journaling setup optimized for Visual Studio Code.
 
-There are templates for:
+![Screenshot of the Quickstart for VSCode](./assets/overview.png)
 
-- End of the year
-- End of the quarter
-- End of the month
-- End of the week
-- Weekday
+This repository provides a ready-to-use Work-Journal configuration tailored specifically for developers using VSCode. Clone the repository, set it up privately, and start tracking your daily tasks, reflections, and progress immediately, with smart, date-based templates to keep you organized effortlessly.
 
-## Scripts to generate template
+---
 
-### Generate template for today
+## 📌 Features
+
+- **Instant Setup**: Clone, open in VSCode, and start journaling.
+- **Daily Automation**: Easily generate journal entries for daily, weekly, monthly, quarterly, or yearly reflections.
+- **Smart Templates**: Automatically selects appropriate reflection templates based on the current date.
+- **Customizable**: Adjust templates and settings directly within VSCode.
+- **Git-Friendly**: Seamlessly integrates with Git for effortless tracking and backup.
+- **VSCode Action Buttons**: Quick-access buttons configured directly in VSCode to streamline your journaling workflow.
+
+---
+
+## ⚡ Quickstart
+
+### Step 1: Clone the Repository
+
+Clone this repository locally:
 
 ```bash
-bash ./Scripts/generateDay
+git clone https://github.com/NicoSchwandner/WorkJournal_VSCodeSetup.git
+cd WorkJournal_VSCodeSetup
 ```
 
-### Generate template for tomorrow
+### Step 2: Set Up a Private Repository (Optional but Recommended)
+
+To keep your journal entries private, initialize a new private GitHub repository and push your cloned copy there:
 
 ```bash
-bash ./Scripts/generateDay --dayOffset 1
+git remote remove origin
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_PRIVATE_REPO.git
+git push -u origin main
 ```
 
-## Example Journal entry
+### Step 3: Open in VSCode
+
+```bash
+code .
+```
+
+### Step 4: Generate Today's Journal Entry
+
+Make sure you have [Node.js](https://nodejs.org/en/download/) installed, then run this command in your VSCode terminal:
+
+```bash
+npx work-journal new --open
+```
+
+This command:
+
+- Generates a Markdown file at `journal/YYYY/MM/YYYY-MM-DD.md`
+- Automatically selects the right template (daily, weekly, monthly, quarterly, yearly)
+- Opens the file directly in VSCode.
+
+For full details, see the original [Work-Journal CLI repository](https://github.com/NicoSchwandner/WorkJournal).
+
+---
+
+## 🛠️ Included Templates
+
+The repository comes with default templates optimized for structured reflections:
+
+- **Daily**: Quick capture of tasks, progress, and blockers
+- **Weekly**: Review weekly wins, challenges, and next week's focus
+- **Monthly**: Highlight monthly achievements, issues, and set new goals
+- **Quarterly**: Reflect deeply each quarter and outline future targets
+- **Yearly**: Comprehensive year-end reflection and forward planning
+
+To customize these templates, simply edit files in the `templates/` folder.
+
+---
+
+## 📖 Example Journal Entry
+
+Here's a sample daily journal structure:
 
 ```markdown
-    # June 13, 2024 - Implementing User Authentication
+# 2025-05-22 (Week 21)
 
-    ## Daily Overview
+## Top 3 priorities
 
-    - **Tasks Completed:** Implemented login and registration forms using React and TypeScript.
-    - **Challenges Faced:** Struggled with handling async validation for username uniqueness.
-    - **Solutions and Workarounds:** Used debounce to handle API calls for username validation to improve performance.
+- [ ] Task 1
+- [ ] Task 2
+- [ ] Task 3
 
-    ## Detailed Notes
+## Progress made
 
-    ### Code Snippets
+- Fixed critical bug related to pagination state management
+- Pair-programmed on authentication integration
 
-    ```typescript
-    const validateUsername = debounce(async (username: string) => {
-    const response = await fetch(`/api/validate-username?username=${username}`);
-    return response.json();
-    }, 300);
-    ```
+## Blockers
 
-    ### Learnings
+- Waiting on backend API
+- Testing error boundaries
 
-    Learned about debouncing to improve the performance of API calls during form validation.
+## Tomorrow
 
-    ### References and Resources
-
-    - [React Debounce Hook](https://usehooks.com/useDebounce/)
-
-    ## Reflection
-
-    - **What Went Well:** Successfully implemented and tested the forms; the debounce solution significantly improved performance.
-    - **What Could Be Improved:** Need to refactor validation logic to make it more reusable.
-    - **Next Steps:** Tomorrow, focus on integrating JWT authentication on the backend.
-
-    ## Miscellaneous
-
-    - **Ideas and Insights:** Consider adding a loading spinner during async validations.
-    - **Questions:** How to securely handle JWT storage on the client side?
-
-    ```
-    Some overall insight
-    ```
+- [ ] Implement feedback
+- [ ] Finish tests
 ```
+
+---
+
+## 🎛️ Configuration
+
+Adjust global journal settings in the `work-journal.json` file:
+
+```json
+{
+  "holidayCutoffDay": 22
+}
+```
+
+This defines the cutoff day in December for triggering the yearly reflection.
+
+---
+
+## 🚀 VSCode Action Buttons
+
+This repository is configured with VSCode Action Buttons for quick and easy journaling:
+
+![Action buttons in VS Code](./assets/actionButtons.png)
+
+- **Create Today**: Generates and opens today's journal entry.
+- **Create Tomorrow**: Prepares tomorrow's journal entry in advance.
+- **Save**: Quickly commits and pushes your journal updates to your Git repository.
+
+---
+
+## 🧑‍💻 Recommended VSCode Extensions
+
+Enhance your journaling experience in VSCode with these recommended extensions:
+
+- [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+- [Markdownlint](https://marketplace.visualstudio.com/items?itemName=davidanson.vscode-markdownlint)
+- [Action Buttons](https://marketplace.visualstudio.com/items?itemName=seunlanlege.action-buttons)
+
+---
+
+## 📜 License
+
+Licensed under the [Apache 2.0 License](LICENSE).
+
+---
+
+📝 **Happy journaling!**
