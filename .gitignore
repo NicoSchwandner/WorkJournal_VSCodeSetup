@@ -1,0 +1,35 @@
+# Ignore node_modules if using any tooling
+node_modules/
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# Ignore backup files
+*~
+*.swp
+*.swo
+
+# Ignore temporary files
+*.tmp
+
+# Ignore system-specific files
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Ignore Python cache if using Python scripts
+__pycache__/
+*.pyc
+
+# Ignore output or build directories (if any)
+dist/
+build/
+out/
+
+# Ignore personal notes or drafts (optional)
+drafts/
+private/

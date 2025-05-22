@@ -1,0 +1,27 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#94ac8c",
+    "titleBar.activeBackground": "#9dc291",
+    "titleBar.activeForeground": "#2e2e2f"
+  },
+  "workbench.colorTheme": "Default Light Modern",
+  "actionButtons": {
+    "commands": [
+      {
+        "name": "$(add) Create Today",
+        "command": "export EDITOR=code; work-journal new --open"
+      },
+      {
+        "name": "$(debug-step-over) Create Tomorrow",
+        "command": "export EDITOR=code; work-journal new --offset 1 --open"
+      },
+      {
+        "name": "$(save) Save",
+        "command": "today=$(date); git add .; git commit -m \"Commit $today\"; git push"
+      }
+    ],
+    "defaultColor": "none",
+    "reloadButton": null,
+    "loadNpmCommands": false
+  }
+}
