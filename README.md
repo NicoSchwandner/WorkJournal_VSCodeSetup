@@ -2,9 +2,11 @@
 
 > A zero-friction Markdown journaling setup optimized for Visual Studio Code.
 
+> ⚠️ **Warning**: This repo contains a quick-start configuration that you can use if you want to use work-journal with VSCode. To find the actual npm package, go to [WorkJournal](https://github.com/NicoSchwandner/WorkJournal)
+
 ![Screenshot of the Quickstart for VSCode](./assets/overview.png)
 
-This repository provides a ready-to-use Work-Journal configuration tailored specifically for developers using VSCode. Clone the repository, set it up privately, and start tracking your daily tasks, reflections, and progress immediately, with smart, date-based templates to keep you organized effortlessly.
+This repository provides a ready-to-use [Work-Journal](https://github.com/NicoSchwandner/WorkJournal) configuration tailored specifically for developers using VSCode. Clone the repository, set it up privately, and start tracking your daily tasks, reflections, and progress immediately, with smart, date-based templates to keep you organized effortlessly.
 
 ---
 
