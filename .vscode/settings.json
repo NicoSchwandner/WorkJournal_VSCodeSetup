@@ -9,11 +9,11 @@
     "commands": [
       {
         "name": "$(add) Create Today",
-        "command": "export EDITOR=code; work-journal new --open"
+        "command": "export EDITOR=code; npx work-journal new --open"
       },
       {
         "name": "$(debug-step-over) Create Tomorrow",
-        "command": "export EDITOR=code; work-journal new --offset 1 --open"
+        "command": "export EDITOR=code; npx work-journal new --offset 1 --open"
       },
       {
         "name": "$(save) Save",
