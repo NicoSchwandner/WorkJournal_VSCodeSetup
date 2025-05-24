@@ -2,11 +2,11 @@
 
 > A zero-friction Markdown journaling setup optimized for Visual Studio Code.
 
-> ⚠️ **Warning**: This repo contains a quick-start configuration that you can use if you want to use work-journal with VSCode. To find the actual npm package, go to [WorkJournal](https://github.com/NicoSchwandner/WorkJournal)
+> ⚠️ **Warning**: This repo contains a quick-start configuration that you can use if you want to use work-journal with VSCode. To find the actual npm package, go to [work-journal-cli](https://github.com/NicoSchwandner/work-journal-cli)
 
 ![Screenshot of the Quickstart for VSCode](./assets/overview.png)
 
-This repository provides a ready-to-use [Work-Journal](https://github.com/NicoSchwandner/WorkJournal) configuration tailored specifically for developers using VSCode. Clone the repository, set it up privately, and start tracking your daily tasks, reflections, and progress immediately, with smart, date-based templates to keep you organized effortlessly.
+This repository provides a ready-to-use [Work-Journal](https://github.com/NicoSchwandner/work-journal-cli) configuration tailored specifically for developers using VSCode. Clone the repository, set it up privately, and start tracking your daily tasks, reflections, and progress immediately, with smart, date-based templates to keep you organized effortlessly.
 
 ---
 
@@ -28,8 +28,8 @@ This repository provides a ready-to-use [Work-Journal](https://github.com/NicoSc
 Clone this repository locally:
 
 ```bash
-git clone https://github.com/NicoSchwandner/WorkJournal_VSCodeSetup.git
-cd WorkJournal_VSCodeSetup
+git clone https://github.com/NicoSchwandner/work-journal-vs-code-setup.git
+cd work-journal-vs-code-setup
 ```
 
 ### Step 2: Set Up a Private Repository (Optional but Recommended)
@@ -62,7 +62,7 @@ This command:
 - Automatically selects the right template (daily, weekly, monthly, quarterly, yearly)
 - Opens the file directly in VSCode.
 
-For full details, see the original [Work-Journal CLI repository](https://github.com/NicoSchwandner/WorkJournal).
+For full details, see the original [Work-Journal CLI repository](https://github.com/NicoSchwandner/work-journal-cli).
 
 ---
 
